@@ -8,6 +8,7 @@ beta = 0.8  # discount rate
 alpha = 0.3   # capital share of output
 delta = 0.1  # rate of depreciation
 A = 1.0  # TFP
+T = 20  # number of periods until steady state
 
 # exogenous labor supply
 n = np.array([1.0, 1.0, 0.2])

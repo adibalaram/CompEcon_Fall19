@@ -19,7 +19,7 @@ def solve_ss(r_init, params):
         # get w
         w = firm.get_w(r, alpha, A, delta)
         # solve HH problem
-        foc_args = (beta, sigma, r, w, n)
+        foc_args = (beta, sigma, r, w, n, 0.0)
         b_sp1_guess = [0.05, 0.05]
         result = opt.root(hh.FOCs, b_sp1_guess, args=foc_args)
         b_sp1 = result.x
